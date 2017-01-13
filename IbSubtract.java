@@ -8,7 +8,7 @@ public class IbSubtract {
 
     public ListNode subtract(ListNode a) {
 	    
-	    ListNode h = a;
+	ListNode h = a;
 
         int size = getListSize(h);
         int loops = size / 2;
@@ -42,14 +42,14 @@ public class IbSubtract {
 
         return a;
 	    
-	}
+    }
 	
-	private int getListSize(ListNode h) {
-	    int size = 0;
-	    while (h != null) {
-	        size++;
-	        h = h.next;
-	    }
-	    return size;
-	}
+    private int getListSize(ListNode h) {
+        int size = 0;
+        while (h != null) {
+	    size++;
+	    h = h.next;
+        }
+        return size;
+    }
 }
